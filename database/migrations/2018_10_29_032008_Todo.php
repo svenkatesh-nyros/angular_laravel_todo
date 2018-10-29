@@ -15,7 +15,7 @@ class Todo extends Migration
     {
         Schema::create('todo', function (Blueprint $table) {
             $table->increments('id');
-            $table->increments('name');
+            $table->string('name');
             $table->timestamps();
         });
     }
